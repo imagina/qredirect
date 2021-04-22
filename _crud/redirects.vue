@@ -10,6 +10,7 @@
       crudData() {
         return {
           crudId: this.crudId,
+          entityName: config("main.qredirect.entityNames.redirect"),
           apiRoute: 'apiRoutes.qredirect.redirects',
           permission: 'iredirect.redirects',
           create: {
