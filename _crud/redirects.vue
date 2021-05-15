@@ -13,6 +13,7 @@
           entityName: config("main.qredirect.entityNames.redirect"),
           apiRoute: 'apiRoutes.qredirect.redirects',
           permission: 'iredirect.redirects',
+          extraFormFields: 'iredirect.crud-fields.redirects',
           create: {
             title: this.$tr('qredirect.layout.newRedirect'),
           },
