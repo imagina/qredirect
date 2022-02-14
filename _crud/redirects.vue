@@ -15,27 +15,27 @@
           permission: 'iredirect.redirects',
           extraFormFields: 'iredirect.crud-fields.redirects',
           create: {
-            title: this.$tr('qredirect.layout.newRedirect'),
+            title: this.$tr('iredirect.cms.newRedirect'),
           },
           read: {
             columns: [
-              {name: 'id', label: this.$tr('ui.form.id'), field: 'id', style: 'width: 50px'},
-              {name: 'from', label: this.$tr('qredirect.layout.label.redirectFrom'), field: 'from', align: 'rigth'},
-              {name: 'to', label: this.$tr('qredirect.layout.label.redirectTo'), field: 'to', align: 'left'},
+              {name: 'id', label: this.$tr('isite.cms.form.id'), field: 'id', style: 'width: 50px'},
+              {name: 'from', label: this.$tr('iredirect.cms.label.redirectFrom'), field: 'from', align: 'rigth'},
+              {name: 'to', label: this.$tr('iredirect.cms.label.redirectTo'), field: 'to', align: 'left'},
               {
-                name: 'createdAt', label: this.$tr('ui.form.createdAt'), field: 'createdAt', align: 'left',
+                name: 'createdAt', label: this.$tr('isite.cms.form.createdAt'), field: 'createdAt', align: 'left',
                 format: val => val ? this.$trd(val) : '-',
               },
               {
-                name: 'updatedAt', label: this.$tr('ui.form.updatedAt'), field: 'updatedAt', align: 'left',
+                name: 'updatedAt', label: this.$tr('isite.cms.form.updatedAt'), field: 'updatedAt', align: 'left',
                 format: val => val ? this.$trd(val) : '-',
               },
-              {name: 'actions', label: this.$tr('ui.form.actions'), align: 'left'},
+              {name: 'actions', label: this.$tr('isite.cms.form.actions'), align: 'left'},
             ],
             requestParams: {}
           },
           update: {
-            title: this.$tr('qredirect.layout.updateRedirect'),
+            title: this.$tr('iredirect.cms.updateRedirect'),
           },
           delete: true,
           formLeft: {
@@ -46,16 +46,16 @@
               value: '',
               type: 'input',
               props: {
-                label: `${this.$tr('qredirect.layout.label.redirectFrom')}*`,
-                rules: [val => !!val || this.$tr('ui.message.fieldRequired')],
+                label: `${this.$tr('iredirect.cms.label.redirectFrom')}*`,
+                rules: [val => !!val || this.$tr('isite.cms.message.fieldRequired')],
               },
             },
             to: {
               value: '',
               type: 'input',
               props: {
-                label: `${this.$tr('qredirect.layout.label.redirectTo')}*`,
-                rules: [val => !!val || this.$tr('ui.message.fieldRequired')],
+                label: `${this.$tr('iredirect.cms.label.redirectTo')}*`,
+                rules: [val => !!val || this.$tr('isite.cms.message.fieldRequired')],
               },
             },
           },
