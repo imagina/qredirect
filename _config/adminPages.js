@@ -9,7 +9,7 @@ export default {
     page: () => import('@imagina/qcrud/_pages/admin/crudPage'),
     layout: () => import('@imagina/qsite/_layouts/master.vue'),
     title: 'iredirect.cms.sidebar.adminRedirects',
-    icon: 'fas fa-random',
+    icon: 'fa-light fa-shuffle',
     subHeader: {
       refresh: true,
     }
