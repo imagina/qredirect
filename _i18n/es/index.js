@@ -1,5 +1,5 @@
-import layout from '@imagina/qredirect/_i18n/es/layout'
-import sidebar from '@imagina/qredirect/_i18n/es/sidebar'
+import layout from 'modules/qredirect/_i18n/es/layout'
+import sidebar from 'modules/qredirect/_i18n/es/sidebar'
 
 export default {
   layout,
