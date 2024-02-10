@@ -5,9 +5,9 @@ export default {
     authenticated: true,
     path: '/redirect/redirects/index',
     name: 'qredirect.admin.redirects',
-    crud : import('@imagina/qredirect/_crud/redirects'),
-    page: () => import('@imagina/qcrud/_pages/admin/crudPage'),
-    layout: () => import('@imagina/qsite/_layouts/master.vue'),
+    crud : import('modules/qredirect/_crud/redirects'),
+    page: () => import('modules/qcrud/_pages/admin/crudPage'),
+    layout: () => import('layouts/master.vue'),
     title: 'iredirect.cms.sidebar.adminRedirects',
     icon: 'fa-light fa-shuffle',
     subHeader: {
